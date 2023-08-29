@@ -5,16 +5,7 @@ import Hero from "./components/Hero";
 import experiences from "./data";
 
 function App() {
-  const cards = experiences.map((exp) => (
-    <Card
-      img={exp.coverImg}
-      rating={exp.stats.rating}
-      reviewCount={exp.stats.reviewCount}
-      location={exp.location}
-      title={exp.title}
-      price={exp.price}
-    />
-  ));
+  const cards = experiences.map((exp) => <Card key={exp.id} {...exp} />);
 
   return (
     <div className="general-container">
