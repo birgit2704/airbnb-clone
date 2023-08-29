@@ -45,4 +45,35 @@ body {
   text-align: left;
 }
 
-/* poppins 600 300 */
+.cards-container {
+  padding-left: 36px;
+  padding-bottom: 30px;
+}
+
+.card-container {
+  width: 176px;
+  font-size: 12px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-info-container {
+  display: flex;
+  font-weight: 300;
+  gap: 5px;
+  color: #918e9b;
+}
+.card-info-container > p > img {
+  width: 14px;
+  margin-right: 5px;
+}
+
+.card-rating {
+  color: black;
+}
+p {
+  margin: 0;
+  line-height: 1.7;
+}
