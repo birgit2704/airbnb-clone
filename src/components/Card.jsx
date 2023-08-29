@@ -1,23 +1,22 @@
 import React from "react";
-import zaferes from "../assets/zaferes.png";
-import star from "../assets/star.png";
+import star from "../images/star.png";
 
-function Card() {
+function Card({ img, rating, reviewCount, location, title, price }) {
   return (
     <div className="cards-container">
       <div className="card-container">
-        <img className="card-image" src={zaferes} alt="" />
+        <img className="card-image" src={`../../assets/${img}`} alt="" />
         <div className="card-info-container">
           <p className="card-rating">
             <img src={star} alt="" />
-            5.0
+            {rating}
           </p>
-          <p>(6)</p>
-          <p>• USA</p>
+          <p>({reviewCount})</p>
+          <p>• {location}</p>
         </div>
-        <p>Life lessons with Katie Zaferes</p>
+        <p>{title}</p>
         <p>
-          <strong>From $136</strong> / person
+          <strong>From ${price}</strong> / person
         </p>
       </div>
     </div>

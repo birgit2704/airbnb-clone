@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/airbnb1.png";
+import logo from "../images/airbnb1.png";
 
 function Header() {
   return (
